@@ -11,13 +11,7 @@ while True:
     c, addr = sock.accept()
     print ('Got connection from', addr)
     c.send("Successfully connected".encode())
-    while True:
-        
-        
-        
-        
-        break
-        
+
     
     
    
