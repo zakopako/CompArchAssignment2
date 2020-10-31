@@ -1,0 +1,11 @@
+import socket
+
+sock = socket.socket()
+host = socket.gethostname()
+port = 7777
+
+sock.connect((host,port))
+print (sock.recv(1024))
+sock.send("I have a job to give".encode())
+
+sock.close()
